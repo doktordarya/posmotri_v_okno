@@ -202,7 +202,7 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
@@ -250,14 +250,14 @@ ol {
 }
 
 .search-form__checkbox[type="checkbox"]:checked
-  + .search-form__pseudo-checkbox::after {
+  + .search-form__pseudo-checkbox::before {
   content: "";
-  position: absolute;
-  z-index: 1;
+  display: flex;
+  position: relative;
   width: 15px;
   height: 15px;
-  left: 2px;
-  top: 2px;
+  left: 1px;
+  top: 1px;
   background-color: #fff;
 }
 
